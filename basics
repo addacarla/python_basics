@@ -1,0 +1,105 @@
+#5/11/2023
+alfa="5+7"
+beta=alfa*3
+print (alfa+beta)
+#devoirs: a=1, b=2,
+a=1
+b=2
+print(a,b)
+c=a
+a=b
+b=c
+print(a, b)
+#12/09/2023 Chaines de caracteres, chaque caractere a une position, la premier  caractere a la position 0
+MonText="Hello World"
+print (MonText[0])
+print (MonText[1])
+print (MonText[2])
+print (MonText[3])
+print (MonText[4])
+print (MonText[5])
+print (MonText[6])
+print (MonText[7])
+print (MonText[8])
+print (MonText[9])
+print (MonText[10])
+#dans l'autre sense (à l'inverse)
+print (MonText[10])
+print (MonText[9])
+print (MonText[8])
+print (MonText[7])
+print (MonText[6])
+print (MonText[5])
+print (MonText[4])
+print (MonText[3])
+print (MonText[2])
+print (MonText[1])
+print (MonText[0])
+#alternatif
+print (MonText[-1])
+print (MonText[-2])
+print (MonText[-3])
+print (MonText[-4])
+print (MonText[-5])
+print (MonText[-6])
+print (MonText[-7])
+print (MonText[-8])
+print (MonText[-9])
+print (MonText[-10])
+print (MonText[-11])
+#pour montrer just une partie du text
+print (MonText[1:5])
+print (MonText[:5])# si il y a pas d'indication ca sara dans le debut
+print (MonText[6:])#meme si il y a l'indication vers la fin
+print (MonText[-5:-1])
+print (MonText[::-1])#la chaine inversée
+print (MonText[::1])#la chaine normale complete
+print (MonText[1:-1])#ça coupe le debut et la fin
+MonText=" Hello world"
+print (MonText[::1])#1 =Hello world
+print (MonText.upper())#2. maiuscule =HELLO WORLD
+print (MonText.strip())#3. la chaine complet
+NoveauText=MonText.replace("H", "B")#4 1 pas
+print (NoveauText)#4 2 pas Hello world
+NoveauText=MonText.replace("Hello", "This is the")#5 1 pas
+print (NoveauText)#5 2 pas =Bello world
+NoveauText=MonText.split()#6 1 pas
+print(NoveauText)#6 2 pas =This is the world
+NoveauText="Bienvenu" #7 1 pas 
+NouvelleChaine=NoveauText+MonText #7 2 pas ='', 'Hello', 'world', '']
+print(NouvelleChaine) #7 3 pas =Bienvenu Hello world
+print("Longeur du texte:",len(MonText)) #8 longueur du texte
+#condition type boolean:True/False(vrai7faux)
+#syntaxe if MonText==TextRenverse : (:=après if et else)
+#exercise: établissey l'algorithme pour analyser si un mot est un palindrome
+mot=input("entrez un mot")
+print (mot, mot[::-1])
+if mot==mot[::-1]:
+    print ("palindrome" )
+# (mot[::1])!=(mot[::-1]):print("non palindrome")
+else :
+    print("non palindrome")#si il y à de space, la mot est considereè non palindrome
+#calculatrice
+valeur_a=int(input ("entrez un valeur"))
+valeur_b=int(input ("entrez un valeur"))
+#fonction alternatif, eval()=int()
+print(type(valeur_a), type(valeur_b), type(resultat))
+total=valeur_a+valeur_b
+print (total)
+#26/09/2023
+#exercise palindrome II, create program to identifz a palindrome using alternative method
+mot=input("entrez un mot")
+length=len(mot)
+neuvellemot=""
+#in this command, i am ordering i to be 0, the position of the verz first letter
+i=0
+while i<len(mot):
+    nouvellemot=mot[i]+neuvellemot
+    i=i+1
+#in this previous command, i am somehow ordering i to take the place of each character
+    print(nouvellemot)
+if mot==nouvellemot:
+    print ("palindrome")
+else:
+    print ("non-palindrome")
+
